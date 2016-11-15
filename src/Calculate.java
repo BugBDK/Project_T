@@ -1,5 +1,5 @@
 
-public class Calculate_Change {
+public class Calculate {
 	private String name;
 	private int salary;
 	private int sale;
@@ -14,7 +14,7 @@ public class Calculate_Change {
 		sum = this.salary+(this.sale*0.01); 
 		return sum;
 	}
-	public double cal_sale_less_50001(){
+	public double cal_sale_less_100000(){
 		double sum = 0;
 		sum = this.salary+(this.sale*0.02); 
 		return sum;

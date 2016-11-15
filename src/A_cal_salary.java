@@ -15,7 +15,7 @@ public class A_cal_salary {
 		if (sales >= 1 || sales <= 50000){ //minor change of Project A 
 			sum = cal.cal_sale_less_50000();
 		}
-		else if (sales <= 50000){
+		else if (sales <= 100000){
 			sum = cal.cal_sale_less_50001();
 		}
 		else{
