@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class aaaa {
+public class A_cal_salary {
 
 	public static void main(String[] args) {
 		System.out.println("------ This Project is Calculate Salary -------");
