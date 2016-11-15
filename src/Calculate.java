@@ -1,5 +1,5 @@
 
-public class Calculate_Change {
+public class Calculate{
 	private String name;
 	private int salary;
 	private int sale;
