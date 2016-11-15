@@ -10,9 +10,18 @@ public class A_cal_salary {
 		int salary = scan.nextInt();
 		System.out.print("Input Employee's sales : ");
 		int sales = scan.nextInt();
-		
+		double sum;
+		Calculate cal = new Calculate();
 		if (sales >= 1 || sales <= 25000){
-			
+			sum = cal.cal_sale_less_25000();
+		}
+		else if (sales <= 50000){
+			sum = cal.cal_sale_less_50000();
+		}
+		else{
+			sum = cal_sale_more_50001();
+			}
+		System.out.println("result = " +sum);
 		}
 	}
 
