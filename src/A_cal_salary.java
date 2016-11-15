@@ -12,11 +12,11 @@ public class A_cal_salary {
 		int sales = scan.nextInt();
 		double sum;
 		Calculate cal = new Calculate(name,salary,sales);
-		if (sales >= 1 || sales <= 50000){ //minor change of Project A 
-			sum = cal.cal_sale_less_50000();
+		if (sales >= 1 || sales <= 25000){ //minor change of Project A 
+			sum = cal.cal_sale_less_25000();
 		}
 		else if (sales <= 100000){
-			sum = cal.cal_sale_less_50001();
+			sum = cal.cal_sale_less_100000();
 		}
 		else{
 			sum = cal.cal_sale_more_100001();
