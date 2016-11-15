@@ -12,15 +12,18 @@ public class A_cal_salary {
 		int sales = scan.nextInt();
 		double sum;
 		Calculate cal = new Calculate(name,salary,sales);
-		if (sales >= 1 || sales <= 50000){ //minor change of Project A 
-			sum = cal.cal_sale_less_50000();
+		if (sales >= 1 || sales <= 25000){ //minor change of Project A 
+			sum = cal.cal_sale_less_25000();
 		}
 		else if (sales <= 50000){
-			sum = cal.cal_sale_less_50001();
+			sum = cal.cal_sale_less_50000();
 		}
 		else{
-			sum = cal.cal_sale_more_100001();
+			sum = cal.cal_sale_more_50001();
 			}
+		if (sum < 18000){
+			sum = 18000;
+		}
 		System.out.println("---------------Result----------------");
 		System.out.println("Employee's name = " +name);
 		System.out.println("result = " +sum + " Bath");
