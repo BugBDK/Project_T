@@ -23,6 +23,5 @@ public class Calculate {
 		double sum = 0;
 		sum = this.salary+(this.sale*0.03); 
 		return sum;
-	}
-	
+	}	
 }
