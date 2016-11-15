@@ -9,14 +9,14 @@ public class A_cal_salary {
 		System.out.print("Input Employee's Salary : ");
 		double salary = scan.nextDouble();
 		while (salary < 1){
-			System.out.print("!!!! Input Error !!! Salary must more than 0 !!!");
+			System.out.println("!!!! Input Error !!! Salary must more than 0 !!!");
 			System.out.print("Input Employee's Salary : ");
 			salary = scan.nextDouble();
 		}
 		System.out.print("Input Employee's sales : ");
 		double sales = scan.nextDouble();
 		while (sales < 1){
-			System.out.print("!!!! Input Error !!! Sales must more than 0 !!!");
+			System.out.println("!!!! Input Error !!! Sales must more than 0 !!!");
 			System.out.print("Input Employee's Sales : ");
 			sales = scan.nextDouble();
 		}
