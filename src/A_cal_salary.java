@@ -2,29 +2,29 @@ import java.util.Scanner;
 public class A_cal_salary {
 
 	public static void main(String[] args) {
-		int salary ;
-		int sales ;
+		double salary ;
+		double sales ;
 		System.out.println("------ This Project is Calculate Salary -------");
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Input Employee's Name : ");
 		String name = scan.nextLine();
 		System.out.print("Input Employee's Salary : ");
-		salary = scan.nextInt();
+		salary = scan.nextDouble();
 		while(salary < 1 ){
 			System.out.println("--Error Employee's Salary--");
 			System.out.print("Please Input Employee's Salary : ");
-			salary = scan.nextInt();
+			salary = scan.nextDouble();
 			} 
 		System.out.print("Input Employee's Sales : ");
-		sales = scan.nextInt();
+		sales = scan.nextDouble();
 		while(sales < 1 ){
 			System.out.println("--Error Employee's Sales--");
 			System.out.print("Please Input Employee's Sales : ");
-			sales = scan.nextInt();
+			sales = scan.nextDouble();
 		} 
-		double sum;
+		double sum=0;
 		Calculate cal = new Calculate(name,salary,sales);
-		if (sales >= 1 || sales <= 50000){ //minor change of Project A 
+		if (sales >= 1 && sales <= 50000){ //minor change of Project A 
 			sum = cal.cal_sale_less_50000();
 		}
 		else if (sales <= 100000){

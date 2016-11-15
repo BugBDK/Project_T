@@ -1,10 +1,10 @@
 
 public class Calculate {
 	private String name;
-	private int salary;
-	private int sale;
+	private double salary;
+	private double sale;
 	
-	public Calculate (String name,int salary,int sale){
+	public Calculate (String name,double salary,double sale){
 		this.name = name;
 		this.salary = salary;
 		this.sale = sale;
@@ -23,5 +23,5 @@ public class Calculate {
 		double sum = 0;
 		sum = this.salary+(this.sale*0.03); 
 		return sum;
-	}	
+	}
 }
