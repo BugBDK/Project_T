@@ -8,8 +8,18 @@ public class A_cal_salary {
 		String name = scan.nextLine();
 		System.out.print("Input Employee's Salary : ");
 		int salary = scan.nextInt();
+		while(salary <= 0){	 //àªç¤¡ÒÃ input
+			System.out.println("Input error!!! must input salary more than 0");
+			System.out.print("Input Employee's Salary : ");
+			salary = scan.nextInt();
+		}
 		System.out.print("Input Employee's sales : ");
 		int sales = scan.nextInt();
+		while(sales <= 0){	//àªç¤¡ÒÃ input
+			System.out.println("Input error!!! must input sales more than 0");
+			System.out.print("Input Employee's sales : ");
+			sales = scan.nextInt();
+		}
 		double sum;
 		Calculate cal = new Calculate(name,salary,sales);
 		if (sales >= 1 || sales <= 25000){ //minor change of Project A 
