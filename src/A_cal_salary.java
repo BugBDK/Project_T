@@ -7,25 +7,25 @@ public class A_cal_salary {
 		System.out.print("Input Employee's name : ");
 		String name = scan.nextLine();
 		System.out.print("Input Employee's Salary : ");
-		int salary = scan.nextInt();
+		double salary = scan.nextDouble();
 		while(salary <= 0){	 //àªç¤¡ÒÃ input
 			System.out.println("Input error!!! must input salary more than 0");
 			System.out.print("Input Employee's Salary : ");
-			salary = scan.nextInt();
+			salary = scan.nextDouble();
 		}
 		System.out.print("Input Employee's sales : ");
-		int sales = scan.nextInt();
+		double sales = scan.nextDouble();
 		while(sales <= 0){	//àªç¤¡ÒÃ input
 			System.out.println("Input error!!! must input sales more than 0");
 			System.out.print("Input Employee's sales : ");
-			sales = scan.nextInt();
+			sales = scan.nextDouble();
 		}
 		double sum;
 		Calculate cal = new Calculate(name,salary,sales);
-		if (sales >= 1 || sales <= 25000){ //minor change of Project A 
+		if (sales >= 1 && sales <= 25000){ //minor change of Project A 
 			sum = cal.cal_sale_less_25000();
 		}
-		else if (sales <= 50000){
+		else if (sales >= 25001 && sales <= 50001){
 			sum = cal.cal_sale_less_50000();
 		}
 		else{
