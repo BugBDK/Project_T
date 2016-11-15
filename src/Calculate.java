@@ -9,7 +9,7 @@ public class Calculate {
 		this.salary = salary;
 		this.sale = sale;
 	}
-	public double cal_sale_less_25000(){
+	public double cal_sale_less_50000(){
 		double sum = 0;
 		sum = this.salary+(this.sale*0.01); 
 		return sum;
